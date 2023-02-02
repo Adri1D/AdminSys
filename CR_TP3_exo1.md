@@ -39,6 +39,7 @@ Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 
 
 **Si l'on souhaite se connecter sur la session d'alice pour changer des droits d'accès par exemple, on ne peut pas car il n'y a pas de mot de passe défini par défaut**
+
 Donc soit il n'y a pas de mot de passe, soit il y en a un que l'on ne connait pas donc on ne peut pas se connecter sur la session d'alice sans passer par le root.
 
 
@@ -102,10 +103,12 @@ Number of days of warning before password expires       : 14
 
 **L'utilisateur root a *`bash`* pour shell**
 
+
 **Dans la liste des comptes on remarque un utilisateur suspect :**`cat /etc/passwd`
 ```bash
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 ```
 Cet utilisateur permet de lancer les programmes sans permissions.
+
 
 **Sudo conserve 15 min le mot de passe en mémoire par défaut**
