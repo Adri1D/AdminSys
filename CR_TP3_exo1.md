@@ -9,10 +9,10 @@ Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 
 **On veut d'abord créer les groupes, pour cela :**
 `groupadd dev`
-``groupadd infra`
+`groupadd infra`
 
 
-**On souhaite ajouter les 4 utilisateurs avec bash pour shell, pour cela on utilise la commande :**`useradd -m nom_utilisateur -s /bin/bash`
+**On souhaite ajouter les 4 utilisateurs avec bash pour shell, pour cela on utilise la commande :** `useradd -m nom_utilisateur -s /bin/bash`
 > -m permet de créer un répertoire /home
 > -s permet de changer le shell (dans notre cas par bash).
 
