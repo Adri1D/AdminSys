@@ -1,6 +1,6 @@
 # CR TP3 Exo1 : Utilisateurs, Groupes et Permissions
 
-## 0. Mise en situation
+
 
 **On souhaite gérer deux équipes ; une équipe de développeur et une équipe d'infra** 
 
