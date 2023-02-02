@@ -14,7 +14,8 @@ Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 
 **On souhaite ajouter les 4 utilisateurs avec bash pour shell, pour cela on utilise la commande :** `useradd -m nom_utilisateur -s /bin/bash`
 > `-m` permet de créer un répertoire /home
-> -`s` permet de changer le shell (dans notre cas par bash).
+
+> `-s` permet de changer le shell (dans notre cas par bash).
 
 
 **Pour vérifier les accès on peut par exemple vouloir afficher les membres d'un groupe, pour cela on va utiliser :**
@@ -22,7 +23,7 @@ Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 
 
 **Pour configurer les droits sur certains fichiers, on peut souhaiter changer un utilisateur de groupe, pour cela on va utiliser la coomande** `usermod` **qui permet de gérer les utilisateurs :** `usermod -g nom_groupe nom_utilisateur` 
-> -`g` permet de définir le groupe comme groupe primaire pour l'utilisateur.
+> `-g` permet de définir le groupe comme groupe primaire pour l'utilisateur.
 
 
 **Suite à un changement de poste au sein de l'entreprise on souhaite changer les répertoires prioritaires des utilisateurs, pour cela on va utiliser :**
