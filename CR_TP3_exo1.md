@@ -3,7 +3,6 @@
 ## 0. Mise en situation
 
 **On souhaite gérer deux équipes ; une équipe de développeur et une équipe d'infra** 
-
 Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 
 **On veut d'abord créer les groupes, pour cela :**
@@ -11,7 +10,6 @@ Les utilisateurs concernés sont Alice, Bob, Charlie, Dave.
 ``groupadd infra`
 
 **On souhaite ajouter les 4 utilisateurs avec bash pour shell, pour cela on utilise la commande :**`useradd -m nom_utilisateur -s /bin/bash`
-
 > -m permet de créer un répertoire /home
 > -s permet de changer le shell (dans notre cas par bash).
 
@@ -36,7 +34,6 @@ Donc soit il n'y a pas de mot de passe, soit il y en a un que l'on ne connait pa
 
 **Alice vient de prendre le job et souhaite activer son compte, il faut donc lui créer un mot de passe :**`sudo passwd alice`
 > On doit soit utiliser sudo pour se donner les droits ou passer en root
-
 ```bash
 [sudo] password for adrien:
 New password:
@@ -52,8 +49,6 @@ On pourrait utiliser : `id -g alice` pour récupérer l'id de son groupe, ou enc
 
 **Après avoir remarqué une action annormale de la part de l'id 1003, on souhaite retrouver l'utilisateur associé :** 
 On cherche donc le nom associé à l'id 1003, qui est stocké dans passwd donc utilise la commande `getent` qui permet de trouver l'entrée correspondante dans un répertoire donc : `getent passwd 1003`
-`
 ```bash
 charlie:x:1003:1002::/home/charlie:/bin/bash
 ```
-`
