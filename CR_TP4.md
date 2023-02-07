@@ -3,18 +3,21 @@
 ## Exercice 1. Commandes de base
  
 **On commence par mettre à jour notre système avec les commandes vues en cours :**
+
 `apt update && apt upgrade -y`
 
 **On crée un alias pour la commande précédente afin de pouvoir l'utiliser plus rapidement.**
 **Il faut enregistrer cet alias dans le fichier `~/.bashrc` pour qu'il ne soit pas perdu au prochain redémarrage.**
 
 **Après avoir installé plusieurs paquets, on ne sait plus vraiment lesquels sont installés et on souhaite donc voir les 5 derniers paquets installés :**
+
 `$ grep install /var/log/dpkg.log | tail -n 5`
 >`tail -n 5` permet de voir seulement les 5 dernières lignes soit les 5 derniers paquets installés
 
 
 **Par curiosité, on souhaite connaitre le nombre de paquets disponibles sur les dépôts Ubuntu :**
 `apt list | wc -l` 
+
 On trouve :
 ```bash
 71313
@@ -24,12 +27,14 @@ C'est le nombre de paquets disponibles en téléchargement.
 **On souhaite savoir le nombre de paquets installés sur notre appareil :**
 `dpkg -l | wc -l`
 > `dpkg -l` affiche la liste des paquets et `wc -l` permet d'afficher le nombre de ligne soit le nombre de paquet.
+
 Avec la commande dpkg on obtient :
 ```bash
 423
 ```
 
 `apt list --installed | wc -l`
+
 Avec la commande apt on obtient :
 ```bash
 419
@@ -56,7 +61,8 @@ apt install glow
 ## Exercice 2.
 **Pour connaître le paquet qu'y installe une commande, on utilise :**
 `which -a nom_commande`
-On souhaite crée un script qui affiche le paquet qui a installé la commande passé en argument ; pour cela on écrit dans un script :
+
+**On souhaite crée un script qui affiche le paquet qui a installé la commande passé en argument ; pour cela on écrit dans un script :**
 `which -a $1`
 > Executer ce script va afficher le paquet qui a installé la commande passé en argument.
 
