@@ -13,4 +13,3 @@
 >`tail -n 5` permet de voir seulement les 5 dernières lignes soit les 5 derniers paquets installés
 
 *On souhaite savoir le nombre de paquets disponibles sur les dépôts Ubuntu :*
-``
